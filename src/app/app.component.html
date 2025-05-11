@@ -1,19 +1,31 @@
-<header>
-  <h1 class="text-3xl font-bold underline" >Welcome to My Angular App!</h1>
-  <nav>
-    <a routerLink="/">Home</a>
-    <a routerLink="/about">About</a>
-    <a routerLink="/contact">Contact</a>
-  </nav>
-  
-</header>
-<main>
-  <h1>Welcome to {{ title }}!</h1>  
-  <router-outlet></router-outlet>
-  <div>
-    <p>some simple text to test</p>
-  </div>  
-</main>
-<footer>
-  <p>made by btcthirst</p>
-</footer>
+<div class="md:container md:mx-auto min-h-screen grid grid-rows-[min-content_1fr_min-content] ">
+  <header class="bg-gray-100 ">
+    <nav class="bg-gray-300 p-4">
+      <ul class="flex space-x-4 justify-center">
+        <li><a class="text-white hover:text-gray-300" routerLink="/">Home</a></li>
+        <li><a class="text-white hover:text-gray-300" routerLink="/about">About</a></li>
+        <li><a class="text-white hover:text-gray-300" routerLink="/contact">Contact</a></li>
+        
+        <li><a class="text-white hover:text-gray-300" routerLink="/login">Login</a></li>
+        <li><a class="text-white hover:text-gray-300" routerLink="/register">Register</a></li>
+      </ul>
+    </nav>
+    <div class="text-center mt-4 p-4">
+      <h1 class="text-3xl font-bold">My Angular App</h1>
+      <p class="text-gray-600">Welcome to my Angular application!</p>
+    </div>
+    
+  </header>
+  <main class="bg-gray-50 p-4">
+    <p>test</p>
+    <router-outlet></router-outlet>
+  </main>
+  <footer class="bg-gray-100">
+   
+    <div class="text-center mt-4">
+      <p>Copyright &copy; 2025</p>
+      <p>All rights reserved</p>
+    </div>
+    
+  </footer>
+</div>
